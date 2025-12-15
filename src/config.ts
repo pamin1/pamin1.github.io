@@ -1,91 +1,90 @@
 export const siteConfig = {
-  name: "Ryan Fitzgerald",
-  title: "Senior Software Engineer",
-  description: "Portfolio website of Ryan Fitzgerald",
+  name: "Prachit Amin",
+  title: "Computer Engineering Student at Georgia Tech",
+  description: "Portfolio website of Prachit Amin",
   accentColor: "#1d4ed8",
   social: {
-    email: "your-email@example.com",
-    linkedin: "https://linkedin.com/in/yourprofile",
-    twitter: "https://x.com/rfitzio",
-    github: "https://github.com/RyanFitzgerald",
+    email: "pamin31@gatech.edu",
+    linkedin: "https://linkedin.com/in/prachitamin",
+    github: "https://github.com/pamin1",
   },
   aboutMe:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos asperiores nihil consequatur tempore cupiditate architecto natus commodi corrupti quas quasi facere est, dignissimos odit nam veniam sapiente ut, vitae eligendi ipsum dolor, nostrum ullam impedit! Corrupti ratione mollitia temporibus necessitatibus, consectetur reiciendis recusandae id, dolorum quaerat, vero pariatur. Ratione!",
-  skills: ["Javascript", "React", "Node.js", "Python", "AWS", "Docker"],
+    "I am a driven third year computer engineering student with a strong foundation in software development, robotics, and high-performance computing. I thrive on solving challenging problems at the intersection of autonomy, embedded systems, and real-time control. I work primarily with C++ and modern frameworks to build robust and efficient systems, I’m now seeking early-career opportunities where I can contribute to mission-critical software and learn from experienced teams.",
+  skills: ["C++", "Python", "CUDA", "ROS2", "AWS"],
   projects: [
     {
-      name: "AI Dev Roundup Newsletter",
+      name: "CUDA ResNet",
       description:
-        "One concise email. Five minutes. Every Tuesday. Essential AI news & trends, production-ready libraries, powerful AI tools, and real-world code examples",
-      link: "https://aidevroundup.com/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+        "CUDA implementation of the ResNet18 Architecture using PyTorch weights. Benchmarked against PyTorch's GPU accelerated and CPU implementations.",
+      link: "https://github.com/pamin1/CUDAResNet",
+      skills: ["C++", "CUDA"],
     },
     {
-      name: "Chrome Extension Mastery: Build Full-Stack Extensions with React & Node.js",
+      name: "WatchNX",
       description:
-        "Master the art of building production-ready, full-stack Chrome Extensions using modern web technologies and best practices",
-      link: "https://fullstackextensions.com/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+        "Tinder style movie recommender, pairing with users' Letterboxd history.",
+      link: "https://www.watchnx.com",
+      skills: ["Python", "PostgreSQL", "React", "AWS"],
     },
     {
-      name: "ExtensionKit",
+      name: "Drift",
       description:
-        "Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates & examples",
-      link: "https://extensionkit.io/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+        "Lightweight UAV/Drone with C++ backend and Python wrapping. Runtime configurable classes for various UAV types and parameters.",
+      link: "https://github.com/pamin1/drift",
+      skills: ["C++", "Python"],
     },
+    {
+      name: "Game of Life",
+      description:
+        "Conway's Game of Life using Sequential, Threaded, and OpenMP implementations. Benchmarked variation runtimes.",
+      link: "https://github.com/pamin1/GameOfLife",
+      skills: ["C++", "SFML", "OpenMP"]
+    }
   ],
   experience: [
     {
-      company: "Tech Company",
-      title: "Senior Software Engineer",
-      dateRange: "Jan 2022 - Present",
+      company: "Intelligent Vision and Automation Lab",
+      title: "Undergraduate Research Assistant",
+      dateRange: "August 2025 - Present",
       bullets: [
-        "Led development of microservices architecture serving 1M+ users",
-        "Reduced API response times by 40% through optimization",
-        "Mentored team of 5 junior developers",
+        "Led software bring-up for Unitree Go2, integrating robot and sensor SDKs, and configuring a reproducible robot learning and development environment adopted by GaTech IRIM research teams.",
+        "Built a custom ROS2 PointCloud to LaserScan package that filters 3D LiDAR data by height and azimuth, largely removing quantization errors from the standard ROS2 conversion node and improving mapping fidelity.",
       ],
     },
     {
-      company: "Startup Inc",
-      title: "Full Stack Developer",
-      dateRange: "Jun 2020 - Dec 2021",
+      company: "Dynamics and Control Systems Lab",
+      title: "Undergraduate Research Assistant",
+      dateRange: "September 2024 - August 2025",
       bullets: [
-        "Built and launched MVP product from scratch using React and Node.js",
-        "Implemented CI/CD pipeline reducing deployment time by 60%",
-        "Collaborated with product team to define technical requirements",
+        "Integrated GPU-accelerated MPPI controller into a ROS2 stack using JAX, enabling 10K trajectory rollouts at 50Hz.",
+        "Implemented Control Barrier Function (CBF) soft penalties to enforce collision avoidance in MPPI rollouts.",
+        "Coupled DBSCAN-based LiDAR clustering with CBFs to generate dynamic obstacle avoidance constraints in racing scenarios.",
+        "Constructed a vehicle model tuning pipeline using the equations of motion for a dynamic bicycle model.",
       ],
     },
     {
-      company: "Digital Agency",
-      title: "Frontend Developer",
-      dateRange: "Aug 2018 - May 2020",
+      company: "John Bean Technology",
+      title: "Software Engineering Intern",
+      dateRange: "May 2024 - August 2024",
       bullets: [
-        "Developed responsive web applications for 20+ clients",
-        "Improved site performance scores by 35% on average",
-        "Introduced modern JavaScript frameworks to legacy codebases",
+        "Implemented CI/CD pipeline for 100K+ line codebase",
+        "Designed motion planning integration test suite by containerizing vehicle simulator and creating 50 test scenarios.",
       ],
     },
   ],
   education: [
     {
-      school: "University Name",
-      degree: "Bachelor of Science in Computer Science",
-      dateRange: "2014 - 2018",
-      achievements: [
-        "Graduated Magna Cum Laude with 3.8 GPA",
-        "Dean's List all semesters",
-        "President of Computer Science Club",
-      ],
+      school: "Georgia Institute of Technology",
+      degree: "B.S Computer Engineering, Minor in Robotics",
+      dateRange: "August 2024 - December 2026",
+      achievements: [],
     },
     {
-      school: "Online Platform",
-      degree: "Full Stack Development Certificate",
-      dateRange: "2019",
+      school: "Penn State University",
+      degree: "B.S Computer Engineering",
+      dateRange: "August 2023 - May 2024",
       achievements: [
-        "Completed 500+ hours of coursework",
-        "Built 10+ portfolio projects",
-        "Specialized in React and Node.js",
+        "Degree incomplete; transferred to Georgia Institute of Technology."
       ],
     },
   ],
